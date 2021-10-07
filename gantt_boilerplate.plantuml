@@ -1,0 +1,37 @@
+@startgantt
+'https://plantuml.com/de/gantt-diagram
+
+!include functions/gantt.iuml
+!include ressources/holidays_bavaria.iuml
+!include ressources/colors_iteratec.iuml
+!include ressources/colors_audi.iuml
+
+
+' scale [daily (default) | weekly | monthly | quarterly | yearly]
+printscale weekly
+
+' start of timeline
+Project starts 2021-10-01 
+
+' current date
+%date("yyyy-MM-dd") is colored in salmon
+
+' off-days
+$print_offdays($holidays_bavaria)
+2020/12/24 to 2021/01/01 is closed
+2022/12/24 to 2023/01/01 is closed
+
+' contents
+[Sprint 1] starts on 2021-10-07 and ends on 2021-10-20 and $print_color($iteragelb)
+$print_sprint(2, "2021-10-21", "2021-11-03", $iteragelb, "Sprint 1")
+$print_sprint(3, "2021-11-04", "2021-11-17", $iteragelb, "Sprint 1")
+$print_sprint(4, "2021-11-18", "2021-12-01", $iteragelb, "Sprint 1")
+$print_sprint(5, "2021-12-02", "2021-12-15", $iteragelb, "Sprint 1")
+$print_sprint(6, "2021-12-16", "2021-12-29", $iteragelb, "Sprint 1")
+
+-- TOPIC 1 --
+[ACTIVITY_FIRST] starts on 2021-10-07 and ends on 2021-10-20
+[ACTIVITY_THEN] starts at [ACTIVITY_FIRST]'s end and lasts 2 weeks
+[ACTIVITY_DURATION] starts at 2021-10-21 and lasts 4 weeks
+[MILESTONE] happens on 2021-12-01
+@endgantt

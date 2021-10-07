@@ -1,0 +1,13 @@
+@startgantt
+!$iteragenta = "#9D1681"
+!$iteragenta_light = "#CE8BC0"
+!$iteragenta_xlight = "#E7C5E0"
+
+!$iteragelb = "#FFE500"
+!$iteragelb_light = "#FFF280"
+!$iteragelb_xlight = "#FEF8CB"
+
+!$iteramint = "#00B2BB"
+!$iteramint_light = "#7FD8DD"
+!$iteramint_xlight = "#BFECEE"
+@endgantt

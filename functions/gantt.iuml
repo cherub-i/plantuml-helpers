@@ -1,0 +1,26 @@
+@startgantt
+!procedure $print_sprint($sprint_no, $start, $end, $color="#999999", $sprint_row_marker="")
+    [Sprint $sprint_no] starts on $start and ends $end
+    [Sprint $sprint_no] is colored in $color
+    !if ($sprint_row_marker != "")
+        [Sprint $sprint_no] displays on same row as [$sprint_row_marker]
+    !endif
+!endprocedure
+
+!procedure $print_offdays($holidays_json)
+    ' format for holidays_json:
+    ' { "days": [ "date": "YYYY-MM-DD", "name": "NAME OF DATE"} ]}
+    ' 
+    ' remark: the name-attribute is not used by plantuml
+    saturday are closed
+    sunday are closed
+
+    !foreach $holiday in $holidays_json.days
+        $holiday.date is closed
+    !endfor
+!endprocedure
+
+!procedure $print_color($color)
+    is colored in $color
+!endprocedure
+@endgantt
