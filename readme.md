@@ -12,4 +12,4 @@
 ```
 
 ## Usage
-Include files as needed using `https://raw.githubusercontent.com/cherub-i/plantuml-helpers/<REQUIRED FILE>`
+Include files as needed using `https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main/<PATH TO REQUIRED FILE>`
