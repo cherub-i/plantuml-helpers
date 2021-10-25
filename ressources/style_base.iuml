@@ -20,6 +20,13 @@ skinparam Class {
     BorderColor $LineColor
 }
 
+skinparam State {
+    StartColor $LineColor
+    EndColor $LineColor
+    BackgroundColor $BackgroundColorLight
+    BorderColor $LineColor
+}
+
 skinparam Arrow {
     Color $LineColor
 }

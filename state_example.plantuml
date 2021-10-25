@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/en/state-diagram
+!include ressources/colors_iteratec.iuml
+!include ressources/colors_audi.iuml
+!include ressources/style_base.iuml
+
+' left to right direction
+top to bottom direction
+' skinparam nodesep 10
+' skinparam ranksep 200
+' skinparam linetype polyline
+' skinparam linetype ortho
+
+hide empty description
+
+state KD as "Keine Daten"
+state AG as "Anfrage für Daten gesendet"
+state DLV as "Daten liegen vor"
+
+[*] --> KD
+
+KD -right-> AG : Anfrage generieren \n und versenden
+
+AG -left-> KD : relevante Änderungen
+AG --> AG : Anfrage generieren und versenden
+AG -down-> DLV : Antwort erhalten \n & erfolgreich verarbeitet
+
+DLV --> AG : Anfrage generieren \n und versenden
+
+DLV --> KD : relevante Änderungen
+@enduml
