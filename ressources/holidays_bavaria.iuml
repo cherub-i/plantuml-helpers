@@ -1,4 +1,4 @@
-@startgantt
+@startuml
 !$holidays_bavaria = { "days": [ 
     {"date": "2021-10-03", "name": "Tag der Deutschen Einheit"},
     {"date": "2021-11-01", "name": "Allerheiligen"},
@@ -19,4 +19,4 @@
     {"date": "2022-12-25", "name": "1. Weihnachtsfeiertag"},
     {"date": "2022-12-26", "name": "2. Weihnachtsfeiertag"}
 ]}
-@endgantt
+@enduml

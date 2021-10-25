@@ -1,4 +1,4 @@
-@startgantt
+@startuml
 !$iteragenta = "#9D1681"
 !$iteragenta_light = "#CE8BC0"
 !$iteragenta_xlight = "#E7C5E0"
@@ -10,4 +10,25 @@
 !$iteramint = "#00B2BB"
 !$iteramint_light = "#7FD8DD"
 !$iteramint_xlight = "#BFECEE"
-@endgantt
+
+!$showHelp = 0
+!if ($showHelp == 1)
+    skinparam minClassWidth 200
+    skinparam nodesep 10
+    skinparam ranksep 10
+
+    rectangle "iteratec Colors" {
+        rectangle "Iteragenta" $iteragenta
+        rectangle "Iteragenta Light" $iteragenta_light
+        rectangle "Iteragenta Xlight" $iteragenta_xlight
+
+        rectangle "Iteragelb" $iteragelb
+        rectangle "Iteragelb Light" $iteragelb_light
+        rectangle "Iteragelb Xlight" $iteragelb_xlight
+
+        rectangle "Iteramint" $iteramint
+        rectangle "Iteramint Light" $iteramint_light
+        rectangle "Iteramint Xlight" $iteramint_xlight
+    }
+!endif
+@enduml

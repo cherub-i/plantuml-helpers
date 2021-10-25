@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml-documentation.readthedocs.io/en/latest/formatting/all-skin-params.html
+
+!$BackgroundColor = $iteragelb_light
+!$BackgroundColorDark = $iteragelb
+!$BackgroundColorLight = $iteragelb_xlight
+!$LineColor = $iteragenta
+!$LineColorLight = "#AAA"
+
+skinparam Activity {
+    StartColor $LineColor
+    EndColor $LineColor 
+    BackgroundColor $BackgroundColor
+    BorderColor $LineColor 
+}
+
+skinparam Class {
+    HeaderBackgroundColor $BackgroundColor
+    BackgroundColor $BackgroundColorLight
+    BorderColor $LineColor
+}
+
+skinparam Arrow {
+    Color $LineColor
+}
+
+skinparam Note {
+    BackgroundColor $BackgroundColorLight
+    BorderColor $LineColorLight
+}
+@enduml

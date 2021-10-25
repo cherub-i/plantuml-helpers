@@ -1,4 +1,4 @@
-@startgantt
+@startuml
 !$audi_white = "#FFFFFF"
 !$audi_black = "#000000"
 !$audi_progressive_red = "#F50437"
@@ -18,4 +18,37 @@
 !$audi_green = "#009900"
 !$audi_yellow = "#ffaa00"
 !$audi_red = "#bb0a30"
-@endgantt
+
+!$showHelp = 0
+!if ($showHelp == 1)
+    skinparam minClassWidth 200
+    skinparam nodesep 10
+    skinparam ranksep 10
+
+    rectangle "Audi Colors" {
+        rectangle "White" $audi_white
+        rectangle "Black" $audi_black
+        rectangle "Progressive Red" $audi_progressive_red
+
+        rectangle "Green" $audi_green
+        rectangle "Yellow" $audi_yellow
+        rectangle "Red" $audi_red
+
+        rectangle "Greys" {
+            rectangle "Grey A1" $audi_fct_grey_A1
+            rectangle "Grey A2" $audi_fct_grey_A2
+            rectangle "Grey A3" $audi_fct_grey_A3
+            rectangle "Grey A4" $audi_fct_grey_A4
+            
+            rectangle "Grey B1" $audi_fct_grey_B1
+            rectangle "Grey B2" $audi_fct_grey_B2
+            rectangle "Grey B3" $audi_fct_grey_B3
+            rectangle "Grey B4" $audi_fct_grey_B4
+            
+            rectangle "Grey C1" $audi_fct_grey_C1
+            rectangle "Grey C2" $audi_fct_grey_C2
+            rectangle "Grey C3" $audi_fct_grey_C3
+        }
+    }
+!endif
+@enduml

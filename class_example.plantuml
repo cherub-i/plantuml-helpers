@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/en/gantt-diagram
+
+!include ressources/holidays_bavaria.iuml
+!include ressources/colors_iteratec.iuml
+!include ressources/colors_audi.iuml
+
+!include ressources/style_base.iuml
+
+skinparam wrapWidth 300
+hide empty members
+left to right direction
+'top to bottom direction
+
+title Class diagram
+
+class TestAinB {
+  Xyz : String
+  Baubar : Boolean
+  BaubarAb : Date
+  BaubarBis : Date
+}
+
+TestAinB "0..1" --> "1" SpielMechanik
+TestAinB "0..1" ---> "1..*" Aufgaben
+@enduml

@@ -1,0 +1,115 @@
+@startuml
+!$audi_white = "#FFFFFF"
+!$audi_black = "#000000"
+!$audi_progressive_red = "#F50437"
+
+!$audi_fct_grey_A1 = "#1a1a1a" 
+!$audi_fct_grey_A2 = "#666666"  
+!$audi_fct_grey_A3 = "#b3b3b3" 
+!$audi_fct_grey_A4 = "#e5e5e5" 
+!$audi_fct_grey_B1 = "#333333"
+!$audi_fct_grey_B2 = "#808080" 
+!$audi_fct_grey_B3 = "#cccccc" 
+!$audi_fct_grey_B4 = "#f2f2f2" 
+!$audi_fct_grey_C1 = "#4c4c4c" 
+!$audi_fct_grey_C2 = "#999999" 
+!$audi_fct_grey_C3 = "#d9d9d9"
+
+!$audi_green = "#009900"
+!$audi_yellow = "#ffaa00"
+!$audi_red = "#bb0a30"
+
+!$showHelp = 0
+!if ($showHelp == 1)
+    skinparam minClassWidth 200
+    skinparam nodesep 10
+    skinparam ranksep 10
+
+    rectangle "Audi Colors" {
+        rectangle "White" $audi_white
+        rectangle "Black" $audi_black
+        rectangle "Progressive Red" $audi_progressive_red
+
+        rectangle "Green" $audi_green
+        rectangle "Yellow" $audi_yellow
+        rectangle "Red" $audi_red
+
+        rectangle "Greys" {
+            rectangle "Grey A1" $audi_fct_grey_A1
+            rectangle "Grey A2" $audi_fct_grey_A2
+            rectangle "Grey A3" $audi_fct_grey_A3
+            rectangle "Grey A4" $audi_fct_grey_A4
+            
+            rectangle "Grey B1" $audi_fct_grey_B1
+            rectangle "Grey B2" $audi_fct_grey_B2
+            rectangle "Grey B3" $audi_fct_grey_B3
+            rectangle "Grey B4" $audi_fct_grey_B4
+            
+            rectangle "Grey C1" $audi_fct_grey_C1
+            rectangle "Grey C2" $audi_fct_grey_C2
+            rectangle "Grey C3" $audi_fct_grey_C3
+        }
+    }
+!endif
+!$iteragenta = "#9D1681"
+!$iteragenta_light = "#CE8BC0"
+!$iteragenta_xlight = "#E7C5E0"
+
+!$iteragelb = "#FFE500"
+!$iteragelb_light = "#FFF280"
+!$iteragelb_xlight = "#FEF8CB"
+
+!$iteramint = "#00B2BB"
+!$iteramint_light = "#7FD8DD"
+!$iteramint_xlight = "#BFECEE"
+
+!$showHelp = 0
+!if ($showHelp == 1)
+    skinparam minClassWidth 200
+    skinparam nodesep 10
+    skinparam ranksep 10
+
+    rectangle "iteratec Colors" {
+        rectangle "Iteragenta" $iteragenta
+        rectangle "Iteragenta Light" $iteragenta_light
+        rectangle "Iteragenta Xlight" $iteragenta_xlight
+
+        rectangle "Iteragelb" $iteragelb
+        rectangle "Iteragelb Light" $iteragelb_light
+        rectangle "Iteragelb Xlight" $iteragelb_xlight
+
+        rectangle "Iteramint" $iteramint
+        rectangle "Iteramint Light" $iteramint_light
+        rectangle "Iteramint Xlight" $iteramint_xlight
+    }
+!endif
+'https://plantuml-documentation.readthedocs.io/en/latest/formatting/all-skin-params.html
+
+!$BackgroundColor = $iteragelb_light
+!$BackgroundColorDark = $iteragelb
+!$BackgroundColorLight = $iteragelb_xlight
+!$LineColor = $iteragenta
+!$LineColorLight = "#AAA"
+
+skinparam Activity {
+    StartColor $LineColor
+    EndColor $LineColor 
+    BackgroundColor $BackgroundColor
+    BorderColor $LineColor 
+}
+
+skinparam Class {
+    HeaderBackgroundColor $BackgroundColor
+    BackgroundColor $BackgroundColorLight
+    BorderColor $LineColor
+}
+
+skinparam Arrow {
+    Color $LineColor
+}
+
+skinparam Note {
+    BackgroundColor $BackgroundColorLight
+    BorderColor $LineColorLight
+}
+@enduml

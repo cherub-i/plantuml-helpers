@@ -1,14 +1,15 @@
 @startgantt
-'https://plantuml.com/de/gantt-diagram
+'https://plantuml.com/en/gantt-diagram
 
 !include functions/gantt.iuml
 !include ressources/holidays_bavaria.iuml
 !include ressources/colors_iteratec.iuml
 !include ressources/colors_audi.iuml
 
+!include ressources/style_base.iuml
 
 ' scale [daily (default) | weekly | monthly | quarterly | yearly]
-printscale weekly
+printscale weekly zoom 1
 
 ' start of timeline
 Project starts 2021-10-01 

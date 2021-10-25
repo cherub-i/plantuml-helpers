@@ -1,0 +1,40 @@
+@startuml
+'https://plantuml.com/en/activity-diagram-beta
+
+!include ressources/holidays_bavaria.iuml
+!include ressources/colors_iteratec.iuml
+!include ressources/colors_audi.iuml
+
+!include ressources/style_base.iuml
+
+|S1| System 1
+|S2| System 2
+
+|S1|
+start
+
+->
+
+:Occaecat anim quis in labore do exercitation duis.;
+note right
+    Tempor cupidatat occaecat consequat:
+    * Amet laboris incididunt nulla sit sit Lorem ad mollit.
+    * Elit ex occaecat incididunt aliquip ipsum incididunt veniam do commodo.
+    * Proident mollit proident incididunt enim ea ipsum nulla pariatur eiusmod commodo adipisicing ipsum in ut pariatur.
+end note
+
+-> Tempor cupidatat occaecat consequat;
+
+|S2|
+:Occaecat anim quis in labore do exercitation duis.;
+note right
+    Tempor cupidatat occaecat consequat:
+    * Amet laboris incididunt nulla sit sit Lorem ad mollit.
+    * Elit ex occaecat incididunt aliquip ipsum incididunt veniam do commodo.
+    * Proident mollit proident incididunt enim ea ipsum nulla pariatur eiusmod commodo adipisicing ipsum in ut pariatur.
+end note
+
+->
+
+stop
+@enduml
