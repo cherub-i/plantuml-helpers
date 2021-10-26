@@ -1,5 +1,6 @@
 @startuml
 'https://plantuml.com/en/state-diagram
+'https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main/...
 !include ressources/colors_iteratec.iuml
 !include ressources/colors_audi.iuml
 !include ressources/style_base.iuml

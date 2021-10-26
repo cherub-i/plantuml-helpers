@@ -1,11 +1,11 @@
 @startgantt
 'https://plantuml.com/en/gantt-diagram
-
+'https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main/...
 !include functions/gantt.iuml
 !include ressources/holidays_bavaria.iuml
+
 !include ressources/colors_iteratec.iuml
 !include ressources/colors_audi.iuml
-
 !include ressources/style_base.iuml
 
 ' scale [daily (default) | weekly | monthly | quarterly | yearly]

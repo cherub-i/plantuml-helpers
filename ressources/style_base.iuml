@@ -35,4 +35,8 @@ skinparam Note {
     BackgroundColor $BackgroundColorLight
     BorderColor $LineColorLight
 }
+
+skinparam  Partition {
+    BorderColor $LineColorLight
+}
 @enduml

@@ -1,10 +1,8 @@
 @startuml
 'https://plantuml.com/en/activity-diagram-beta
-
-!include ressources/holidays_bavaria.iuml
+'https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main/...
 !include ressources/colors_iteratec.iuml
 !include ressources/colors_audi.iuml
-
 !include ressources/style_base.iuml
 
 |S1| System 1
