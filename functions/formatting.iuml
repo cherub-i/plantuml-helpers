@@ -1,4 +1,5 @@
 @startuml
+
 !procedure $i($icon_type)
     !if ($icon_type == "ok")
 <size:20><color:green><&circle-check></color></size>
@@ -8,6 +9,9 @@
 <size:20><color:darkorange><&question-mark></color></size>
     !elseif ($icon_type == "i")
 <size:20><color:darkblue><&info></color></size>
+    !elseif ($icon_type == "user")
+<size:20><&person></size>
     !endif
 !endprocedure
+
 @enduml

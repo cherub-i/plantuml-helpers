@@ -16,6 +16,7 @@ want multiline text?;
 *** $i("ok") this is ok
 *** $i("i") this is fyi only
 *** $i("?") well, I don't know either
+*** $i("user") I wish, someone whould know
 
 left side
 
