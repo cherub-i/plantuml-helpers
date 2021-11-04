@@ -1,0 +1,7 @@
+@startuml
+!$OK =       "<size:20><color:green><&circle-check></color></size>"
+!$NOK =      "<size:20><color:crimson><&circle-x></color></size>"
+!$Question = "<size:20><color:darkorange><&question-mark></color></size>"
+!$Info =     "<size:20><color:darkblue><&info></color></size>"
+!$User =     "<size:20><&person></size>"
+@enduml

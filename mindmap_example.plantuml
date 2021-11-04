@@ -1,7 +1,7 @@
 @startmindmap
 'https://plantuml.com/en/state-diagram
 'https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main/...
-!include functions/formatting.iuml
+!include ressources/icons.iuml
 !include ressources/colors_iteratec.iuml
 !include ressources/colors_audi.iuml
 !include ressources/colors_audi.iuml
@@ -12,11 +12,11 @@
 **:But if i
 want multiline text?;
 **_ Rose without borders no color
-*** $i("nok") this is not ok
-*** $i("ok") this is ok
-*** $i("i") this is fyi only
-*** $i("?") well, I don't know either
-*** $i("user") I wish, someone whould know
+*** $NOK this is not ok
+*** $OK but this is
+*** $Info fyi only
+*** $Question well, I don't know either
+*** $User I wish, someone whould know
 
 left side
 

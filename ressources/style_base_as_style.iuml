@@ -18,6 +18,10 @@ mindmapDiagram {
     LineColor $LineColor
     MaximumWidth 300
   }
+  ' should work, but does noz:
+  ' boxless {
+  '   Margin 20 20 0 0
+  ' }
   arrow {
       LineColor $LineColor
   }
