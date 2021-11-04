@@ -1,0 +1,26 @@
+@startmindmap
+'https://plantuml.com/en/state-diagram
+'https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main/...
+!include functions/formatting.iuml
+!include ressources/colors_iteratec.iuml
+!include ressources/colors_audi.iuml
+!include ressources/colors_audi.iuml
+
+* Colors
+
+** Green 
+**:But if i
+want multiline text?;
+**_ Rose without borders no color
+*** $i("nok") this is not ok
+*** $i("ok") this is ok
+*** $i("i") this is fyi only
+*** $i("?") well, I don't know either
+
+left side
+
+** Blue 
+***_:Long text
+on the left side
+without borders;
+@endmindmap

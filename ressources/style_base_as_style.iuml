@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml-documentation.readthedocs.io/en/latest/formatting/all-skin-params.html
+
+!$BackgroundColor = $iteragelb_light
+!$BackgroundColorDark = $iteragelb
+!$BackgroundColorLight = $iteragelb_xlight
+!$LineColor = $iteragenta
+!$LineColorLight = "#AAA"
+
+<style>
+mindmapDiagram {
+  rootNode {
+    FontStyle Bold
+    FontSize 20
+  }
+  node {
+    BackgroundColor $BackgroundColorLight
+    LineColor $LineColor
+    MaximumWidth 300
+  }
+  arrow {
+      LineColor $LineColor
+  }
+}
+</style>
+@enduml
