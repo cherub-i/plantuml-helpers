@@ -1,0 +1,63 @@
+@startuml
+'https://plantuml.com/en/gantt-diagram
+'!define IncludesUrl https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main
+!define IncludesUrl .
+!include IncludesUrl/ressources/colors_base.iuml
+!include IncludesUrl/ressources/colors_iteratec.iuml
+!include IncludesUrl/ressources/colors_audi.iuml
+!include IncludesUrl/ressources/style_base.iuml
+
+!include IncludesUrl/ressources/aws.iuml
+!include AWSIconsUrl/General/all.puml
+!include AWSIconsUrl/Database/Aurora.puml
+!include AWSIconsUrl/Storage/SimpleStorageServiceBucket.puml
+!include AWSIconsUrl/ManagementGovernance/CloudWatch.puml
+
+skinparam wrapWidth 300
+skinparam defaultTextAlignment center
+
+'skinparam linetype polyline
+'skinparam linetype ortho
+'left to right direction
+'top to bottom direction
+
+'variables
+!$projectName = Kartenmischmaschine
+!$colorApplicationBlock = $LightGrey
+!$colorApplicationSubBlock = $MidGrey
+!$colorApplication = $iteragenta_xlight
+!$colorFramework = $iteramint_xlight
+
+'contents
+title $projectName - Bausteinsicht Ebene 0
+
+Client(users, "Nutzer", " ")
+SSLpadlock(idp, "IDP", " ")
+rectangle "$projectName Frontend" as app_fe $colorApplicationBlock
+rectangle "$projectName Backend" as app_be $colorApplicationBlock
+Aurora(db, "AWS Aurora Database", " ")
+
+[Quartett-Server] as qs
+
+[New Relic Service\n(Monitoring & Metrics)] as nr
+CloudWatch(aws_cw, "AWS Cloud Watch", " ")
+SimpleStorageServiceBucket(aws_s3, "AWS S3", " ")
+
+
+
+users -d-> idp : HTTPS
+idp -d-> app_fe : HTTPS
+app_fe -d-> app_be : HTTPS
+app_be .d.> db : uses
+
+app_be -l-> qs : SFTP
+
+app_be .r.> nr : uses
+app_be .ri.> aws_cw : uses
+app_be .right.> aws_s3 : uses
+
+
+' personAlias --> desktopAlias
+' desktopAlias --> storageAlias
+
+@enduml

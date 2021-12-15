@@ -1,0 +1,29 @@
+@startuml
+!$Green = "#008450"
+!$Yellow = "#EFB700"
+!$Red = "#B81D13"
+!$White = "#FFF"
+!$LightGrey = "#DDD"
+!$MidGrey = "#BBB"
+!$DarkGrey = "#999"
+
+!$showHelp = 0
+!if ($showHelp == 1)
+    skinparam minClassWidth 200
+    skinparam nodesep 10
+    skinparam ranksep 10
+
+    rectangle "Base Colors" {
+        rectangle "Green" $Green
+        rectangle "Yellow" $Yellow
+        rectangle "Red" $Red
+
+        rectangle "Greys" {
+            rectangle "White" $White
+            rectangle "LightGrey" $LightGrey
+            rectangle "MidGrey" $MidGrey
+            rectangle "DarkGrey" $DarkGrey
+        }
+    }
+!endif
+@enduml

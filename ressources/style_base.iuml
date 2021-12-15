@@ -14,9 +14,8 @@ skinparam Activity {
     BorderColor $LineColor 
 }
 
-skinparam Rectangle {
-    BackgroundColor $BackgroundColor
-    BorderColor $LineColor 
+skinparam Arrow {
+    Color $LineColor
 }
 
 skinparam Class {
@@ -25,15 +24,9 @@ skinparam Class {
     BorderColor $LineColor
 }
 
-skinparam State {
-    StartColor $LineColor
-    EndColor $LineColor
-    BackgroundColor $BackgroundColorLight
+skinparam Component {
+    BackgroundColor $MidGrey
     BorderColor $LineColor
-}
-
-skinparam Arrow {
-    Color $LineColor
 }
 
 skinparam Note {
@@ -43,5 +36,17 @@ skinparam Note {
 
 skinparam  Partition {
     BorderColor $LineColorLight
+}
+
+skinparam Rectangle {
+    BackgroundColor $BackgroundColor
+    BorderColor $LineColor 
+}
+
+skinparam State {
+    StartColor $LineColor
+    EndColor $LineColor
+    BackgroundColor $BackgroundColorLight
+    BorderColor $LineColor
 }
 @enduml
