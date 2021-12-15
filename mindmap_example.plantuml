@@ -1,10 +1,11 @@
 @startmindmap
 'https://plantuml.com/en/state-diagram
-'https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main/...
-!include ressources/icons.iuml
-!include ressources/colors_iteratec.iuml
-!include ressources/colors_audi.iuml
-!include ressources/colors_audi.iuml
+'!define IncludesUrl https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main
+!define IncludesUrl .
+!include IncludesUrl/ressources/colors_iteratec.iuml
+!include IncludesUrl/ressources/colors_audi.iuml
+!include IncludesUrl/ressources/icons.iuml
+!include IncludesUrl/ressources/style_base.iuml
 
 * Colors
 

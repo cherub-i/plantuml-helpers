@@ -1,9 +1,10 @@
 @startuml
 'https://plantuml.com/en/gantt-diagram
-'https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main/...
-!include ressources/colors_iteratec.iuml
-!include ressources/colors_audi.iuml
-!include ressources/style_base.iuml
+'!define IncludesUrl https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main
+!define IncludesUrl .
+!include IncludesUrl/ressources/colors_iteratec.iuml
+!include IncludesUrl/ressources/colors_audi.iuml
+!include IncludesUrl/ressources/style_base.iuml
 
 skinparam wrapWidth 300
 hide empty members

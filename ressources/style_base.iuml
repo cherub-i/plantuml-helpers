@@ -14,6 +14,11 @@ skinparam Activity {
     BorderColor $LineColor 
 }
 
+skinparam Rectangle {
+    BackgroundColor $BackgroundColor
+    BorderColor $LineColor 
+}
+
 skinparam Class {
     HeaderBackgroundColor $BackgroundColor
     BackgroundColor $BackgroundColorLight
