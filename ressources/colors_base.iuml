@@ -6,6 +6,7 @@
 !$LightGrey = "#DDD"
 !$MidGrey = "#BBB"
 !$DarkGrey = "#999"
+!$LightBlue = "#99F"
 
 !$showHelp = 0
 !if ($showHelp == 1)
@@ -17,6 +18,7 @@
         rectangle "Green" $Green
         rectangle "Yellow" $Yellow
         rectangle "Red" $Red
+        rectangle "LightBlue" $LightBlue
 
         rectangle "Greys" {
             rectangle "White" $White
