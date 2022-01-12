@@ -1,5 +1,5 @@
 @startuml
-'https://plantuml.com/en/gantt-diagram
+'https://plantuml.com/en/component-diagram
 '!define IncludesUrl https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main
 !define IncludesUrl .
 !include IncludesUrl/ressources/colors_base.iuml
