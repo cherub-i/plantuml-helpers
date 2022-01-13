@@ -11,6 +11,7 @@
 !$iteramint_light = "#7FD8DD"
 !$iteramint_xlight = "#BFECEE"
 
+' help output
 !$showHelp = 0
 !if ($showHelp == 1)
     skinparam minClassWidth 200

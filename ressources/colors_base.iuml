@@ -8,6 +8,7 @@
 !$DarkGrey = "#999"
 !$LightBlue = "#99F"
 
+' help output
 !$showHelp = 0
 !if ($showHelp == 1)
     skinparam minClassWidth 200

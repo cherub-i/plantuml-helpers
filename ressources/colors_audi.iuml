@@ -19,6 +19,7 @@
 !$audi_yellow = "#ffaa00"
 !$audi_red = "#bb0a30"
 
+' help output
 !$showHelp = 0
 !if ($showHelp == 1)
     skinparam minClassWidth 200
