@@ -2,9 +2,7 @@
 'https://plantuml.com/en/state-diagram
 '!define IncludesUrl https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main
 !define IncludesUrl .
-!include IncludesUrl/ressources/colors_iteratec.iuml
-!include IncludesUrl/ressources/colors_audi.iuml
-!include IncludesUrl/ressources/style_base.iuml
+!include IncludesUrl/target/include.iuml
 
 ' left to right direction
 top to bottom direction

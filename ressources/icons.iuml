@@ -6,5 +6,5 @@
 !$IconInfo =     "<size:20><color:darkblue><&info></color></size>"
 !$IconUser =     "<size:20><&person></size>"
 !$IconList =     "<size:20><&list></size>"
-!$IconTarget =     "<size:20><&target></size>"
+!$IconTarget =   "<size:20><&target></size>"
 @enduml
