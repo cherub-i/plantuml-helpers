@@ -4,6 +4,7 @@
 !$IconNOK =      "<size:20><color:crimson><&circle-x></color></size>"
 !$IconQuestion = "<size:20><color:darkorange><&question-mark></color></size>"
 !$IconInfo =     "<size:20><color:darkblue><&info></color></size>"
+!$IconWarning =  "<size:20><color:darkred><&warning></color></size>"
 !$IconUser =     "<size:20><&person></size>"
 !$IconList =     "<size:20><&list></size>"
 !$IconTarget =   "<size:20><&target></size>"
