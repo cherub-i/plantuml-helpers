@@ -16,7 +16,7 @@ mindmapDiagram {
   node {
     BackgroundColor $BackgroundColorLight
     LineColor $LineColor
-    MaximumWidth 120
+    MaximumWidth 200
   }
   ' should work, but does not:
   ' boxless {
