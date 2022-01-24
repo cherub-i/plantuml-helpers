@@ -1,25 +1,27 @@
 @startmindmap
-'https://plantuml.com/en/state-diagram
+'https://plantuml.com/en/mindmap-diagram
 '!define IncludesUrl https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main
 !define IncludesUrl .
 !include IncludesUrl/target/include.iuml
+!include IncludesUrl/ressources/style_base_as_style.iuml
 
 * Colors
 
 **[#Green] Green 
 **:But if i
 want multiline text?;
-**_ Rose without borders no color
-*** $NOK this is not ok
-*** $OK but this is
-*** $Info fyi only
-*** $Question well, I don't know either
-*** $User I wish, someone whould know
+**_:Rose without borders no color
+* <size:12>some more details</size>
+* <size:12>fyi</size>;
+*** $IconNOK this is not ok
+*** $IconOK but this is
+*** $IconInfo fyi only
+*** $IconQuestion well, I don't know either
+*** $IconUser I wish, someone whould know
 
 left side
 
 ** Blue 
 ***_:Long text
-on the left side
-without borders;
+<size:12>on the left side without borders</size>;
 @endmindmap
