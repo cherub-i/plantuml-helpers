@@ -1,0 +1,9 @@
+!function $in()
+    !$level = ""
+    !$i = $indent
+    !while $i > 0
+        !$level = $level + "*"
+        !$i = $i - 1
+    !endwhile
+    !return $level
+!endfunction
