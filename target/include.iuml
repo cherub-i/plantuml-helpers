@@ -1,13 +1,24 @@
 @startuml
 ' ressources/colors_base.iuml
-!$Green = "#008450"
-!$Yellow = "#EFB700"
-!$Red = "#B81D13"
-!$White = "#FFF"
-!$LightGrey = "#DDD"
-!$MidGrey = "#BBB"
-!$DarkGrey = "#999"
-!$LightBlue = "#99F"
+!$green = "#008450"
+!$yellow = "#EFB700"
+!$red = "#B81D13"
+!$white = "#FFF"
+!$grey_xlight = "#EEE"
+!$grey_light = "#DDD" 
+!$grey = "#BBB"
+!$grey_dark = "#999"
+!$blue_light = "#99F"
+
+' deprecated
+!$Green = $green
+!$Yellow = $yellow
+!$Red = $red
+!$White = $white
+!$LightGrey = $grey_light 
+!$MidGrey = $grey
+!$DarkGrey = $grey_dark
+!$LightBlue = $blue_light
 
 
 ' ressources/colors_iteratec.iuml
@@ -33,6 +44,12 @@
 !$LineColor = $iteragenta
 !$LineColorLight = "#AAA"
 
+skinparam Legend {
+    BackgroundColor $grey_xlight
+    BorderColor $grey_xlight
+    FontSize 10
+}
+
 skinparam Activity {
     StartColor $LineColor
     EndColor $LineColor 
@@ -51,7 +68,7 @@ skinparam Class {
 }
 
 skinparam Component {
-    BackgroundColor $MidGrey
+    BackgroundColor $grey
     BorderColor $LineColor
 }
 

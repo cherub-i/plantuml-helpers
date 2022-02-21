@@ -1,15 +1,26 @@
 @startuml
-!$Green = "#008450"
-!$Yellow = "#EFB700"
-!$Red = "#B81D13"
-!$White = "#FFF"
-!$LightGrey = "#DDD"
-!$MidGrey = "#BBB"
-!$DarkGrey = "#999"
-!$LightBlue = "#99F"
+!$green = "#008450"
+!$yellow = "#EFB700"
+!$red = "#B81D13"
+!$white = "#FFF"
+!$grey_xlight = "#EEE"
+!$grey_light = "#DDD" 
+!$grey = "#BBB"
+!$grey_dark = "#999"
+!$blue_light = "#99F"
+
+' deprecated
+!$Green = $green
+!$Yellow = $yellow
+!$Red = $red
+!$White = $white
+!$LightGrey = $grey_light 
+!$MidGrey = $grey
+!$DarkGrey = $grey_dark
+!$LightBlue = $blue_light
 
 ' help output
-!$showHelp = 0
+!$showHelp = 1
 !if ($showHelp == 1)
     skinparam minClassWidth 200
     skinparam nodesep 10
@@ -19,13 +30,14 @@
         rectangle "Green" $Green
         rectangle "Yellow" $Yellow
         rectangle "Red" $Red
-        rectangle "LightBlue" $LightBlue
+        rectangle "blue_light" $blue_light
 
         rectangle "Greys" {
             rectangle "White" $White
-            rectangle "LightGrey" $LightGrey
-            rectangle "MidGrey" $MidGrey
-            rectangle "DarkGrey" $DarkGrey
+            rectangle "grey_xlight" $grey_xlight
+            rectangle "grey_light" $grey_light
+            rectangle "grey" $grey
+            rectangle "grey_dark" $grey_dark
         }
     }
 !endif

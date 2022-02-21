@@ -7,6 +7,12 @@
 !$LineColor = $iteragenta
 !$LineColorLight = "#AAA"
 
+skinparam Legend {
+    BackgroundColor $grey_xlight
+    BorderColor $grey_xlight
+    FontSize 11
+}
+
 skinparam Activity {
     StartColor $LineColor
     EndColor $LineColor 
@@ -25,7 +31,7 @@ skinparam Class {
 }
 
 skinparam Component {
-    BackgroundColor $MidGrey
+    BackgroundColor $grey
     BorderColor $LineColor
 }
 

@@ -20,8 +20,8 @@ skinparam defaultTextAlignment center
 
 'variables
 !$projectName = Kartenmischmaschine
-!$colorApplicationBlock = $LightGrey
-!$colorApplicationSubBlock = $MidGrey
+!$colorApplicationBlock = $grey_light
+!$colorApplicationSubBlock = $grey
 !$colorApplication = $iteragenta_xlight
 !$colorFramework = $iteramint_xlight
 
