@@ -16,6 +16,7 @@
 '   SimpleStorageServiceBucket(aws_s3, "AWS S3", " ")
 
 !define AWSIconsUrl https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist
+!define AWSIconsUrlMaster https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
 !include AWSIconsUrl/AWSSimplified.puml
 ' redefine AWSEntity, so that labels are not in bold and closer to icon
 !definelong AWSEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
