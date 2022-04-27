@@ -15,12 +15,23 @@
 '   Aurora(db, "AWS Aurora Database", " ")
 '   SimpleStorageServiceBucket(aws_s3, "AWS S3", " ")
 
-!define AWSIconsUrl https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist
-!define AWSIconsUrlMaster https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
-!include AWSIconsUrl/AWSSimplified.puml
 ' redefine AWSEntity, so that labels are not in bold and closer to icon
 !definelong AWSEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
 rectangle "<color:e_color><$e_sprite></color>\ne_label" <<e_stereo>> as e_alias
 !enddefinelong
+
+' include commonly used AWS icons
+!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/General/all.puml
+
+!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/Compute/Lambda.puml
+!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist/Compute/ElasticContainerService.puml
+!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/Containers/ElasticContainerRegistry.puml
+!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/Database/Aurora.puml
+!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/Database/ElastiCacheElastiCacheforRedis.puml
+!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/DeveloperTools/CodeBuild.puml
+!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/ManagementGovernance/CloudWatch.puml
+!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/NetworkingContentDelivery/ElasticLoadBalancing.puml
+!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/SecurityIdentityCompliance/KeyManagementService.puml
+!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/Storage/SimpleStorageServiceBucket.puml
 
 @enduml
