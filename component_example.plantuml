@@ -1,14 +1,10 @@
 @startuml
 'https://plantuml.com/en/component-diagram
-'!define IncludesUrl https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main
-!define IncludesUrl .
-!include IncludesUrl/target/include.iuml
+'!$IncludesUrl = "https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main"
+!$IncludesUrl = "."
+!include $IncludesUrl/target/include.iuml
+!include $IncludesUrl/ressources/aws.iuml
 
-!include IncludesUrl/ressources/aws.iuml
-!include AWSIconsUrl/General/all.puml
-!include AWSIconsUrl/Database/Aurora.puml
-!include AWSIconsUrl/Storage/SimpleStorageServiceBucket.puml
-!include AWSIconsUrl/ManagementGovernance/CloudWatch.puml
 
 skinparam wrapWidth 300
 skinparam defaultTextAlignment center

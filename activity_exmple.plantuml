@@ -1,8 +1,8 @@
 @startuml
 'https://plantuml.com/en/activity-diagram-beta
-'!define IncludesUrl https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main
-!define IncludesUrl .
-!include IncludesUrl/target/include.iuml
+'!$IncludesUrl = "https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main"
+!$IncludesUrl = "."
+!include $IncludesUrl/target/include.iuml
 
 
 |S1| System 1

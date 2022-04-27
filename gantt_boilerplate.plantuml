@@ -1,11 +1,11 @@
 @startgantt
 'https://plantuml.com/en/gantt-diagram
-'!define IncludesUrl https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main
-!define IncludesUrl .
-!include IncludesUrl/target/include.iuml
+'!$IncludesUrl = "https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main"
+!$IncludesUrl = "."
+!include $IncludesUrl/target/include.iuml
 
-!include IncludesUrl/functions/gantt.iuml
-!include IncludesUrl/ressources/holidays_bavaria.iuml
+!include $IncludesUrl/functions/gantt.iuml
+!include $IncludesUrl/ressources/holidays_bavaria.iuml
 
 
 ' scale [daily (default) | weekly | monthly | quarterly | yearly]

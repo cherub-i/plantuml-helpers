@@ -1,8 +1,8 @@
 @startuml
 'https://plantuml.com/en/gantt-diagram
-'!define IncludesUrl https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main
-!define IncludesUrl .
-!include IncludesUrl/target/include.iuml
+'!$IncludesUrl = "https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main"
+!$IncludesUrl = "."
+!include $IncludesUrl/target/include.iuml
 
 skinparam wrapWidth 300
 hide empty members
