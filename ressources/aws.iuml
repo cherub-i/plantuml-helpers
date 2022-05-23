@@ -1,21 +1,16 @@
 @startuml
 ' helpful ressources:
-' - https://github.com/awslabs/aws-icons-for-plantuml
-' - icon overview:
-'   https://github.com/awslabs/aws-icons-for-plantuml/blob/master/AWSSymbols.md
-'   (!) careful: capitalization and even in the overview is sometimes
-'   wrong, if icons do not render, check in the actual includes
+' - https://plantuml.com/de/stdlib#a464d2f6236a5c23
 '
 ' usage:
 ' - include the needed elements in your file after this include, e.g.
-'   !include AWSIconsUrl/General/all.puml
-'   !include AWSIconsUrl/Database/Aurora.puml
-'   !include AWSIconsUrl/Storage/SimpleStorageServiceBucket.puml
+'   !include <awslib/General/all>
+'   !include <awslib/Database/Aurora>
 ' - use the forms, e.g.:
 '   Aurora(db, "AWS Aurora Database", " ")
 '   SimpleStorageServiceBucket(aws_s3, "AWS S3", " ")
 
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/AWSSimplified.puml
+!include <awslib/AWSSimplified>
 
 ' redefine AWSEntity, so that labels are not in bold and closer to icon
 !definelong AWSEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
@@ -24,17 +19,16 @@ rectangle "<color:e_color><$e_sprite></color>\ne_label" <<e_stereo>> as e_alias
 
 
 ' include commonly used AWS icons
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/General/all.puml
+!include <awslib/General/all>
 
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/Compute/Lambda.puml
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist/Compute/ElasticContainerService.puml
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/Containers/ElasticContainerRegistry.puml
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/Database/Aurora.puml
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/Database/ElastiCacheElastiCacheforRedis.puml
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/DeveloperTools/CodeBuild.puml
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/ManagementGovernance/CloudWatch.puml
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/NetworkingContentDelivery/ElasticLoadBalancing.puml
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/SecurityIdentityCompliance/KeyManagementService.puml
-!include https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v11.1/dist/Storage/SimpleStorageServiceBucket.puml
-
+!include <awslib/Compute/Lambda>
+!include <awslib/Compute/ElasticContainerService>
+!include <awslib/Containers/ElasticContainerRegistry>
+!include <awslib/Database/Aurora>
+!include <awslib/Database/ElastiCacheElastiCacheforRedis>
+!include <awslib/DeveloperTools/CodeBuild>
+!include <awslib/ManagementGovernance/CloudWatch>
+!include <awslib/NetworkingContentDelivery/ElasticLoadBalancing>
+!include <awslib/SecurityIdentityCompliance/KeyManagementService>
+!include <awslib/Storage/SimpleStorageServiceBucket>
 @enduml

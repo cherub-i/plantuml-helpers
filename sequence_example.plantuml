@@ -1,0 +1,47 @@
+@startuml
+'https://plantuml.com/en/sequence-diagram
+!include https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main/target/include.iuml
+!include https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main/ressources/colors_audi.iuml
+
+' skinparam style strictuml
+
+actor "Nutzer" as nutzer
+box "//Typ A//"
+    participant "Liste" as l
+    participant "Positionen" as p
+endbox
+participant "Grunddaten" as gd
+
+nutzer -> l : erstellen
+activate l
+hnote over l, p : anlegen
+
+nutzer -> l : Statusübergang "Bearbeitung starten"
+hnote over l, p : Status: Bearbeiten
+
+activate p
+
+l -> p : Positionen\ngenerieren
+activate l #abc
+activate p #abc
+p ->o gd : verwendet
+deactivate p
+deactivate l
+
+nutzer -> p : Postionen bearbeiten
+activate p #abc
+p ->o gd : verwendet
+deactivate p
+
+nutzer -> p : Postionen updaten
+activate p #abc
+p ->o gd : verwendet
+deactivate p
+deactivate p
+
+nutzer -> l : Statusübergang "Genehmigung"
+hnote over l, p : Status: Genehmigung
+
+
+footer Liste & Positionen
+@enduml
