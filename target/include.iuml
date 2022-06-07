@@ -47,7 +47,7 @@
 skinparam Legend {
     BackgroundColor $grey_xlight
     BorderColor $grey_xlight
-    FontSize 10
+    FontSize 11
 }
 
 skinparam Activity {
@@ -93,6 +93,33 @@ skinparam State {
     BackgroundColor $BackgroundColorLight
     BorderColor $LineColor
 }
+
+<style>
+    .transparent {
+        BackGroundColor transparent
+        LineColor transparent
+    }
+
+    mindmapDiagram {
+        rootNode {
+            FontStyle Bold
+            FontSize 20
+        }
+        node {
+            BackgroundColor $BackgroundColorLight
+            LineColor $LineColor
+            MaximumWidth 200
+        }
+        ' should work, but does not:
+        ' boxless {
+        '   Margin 20 20 0 0
+        ' }
+        arrow {
+            LineColor $LineColor
+        }
+    }
+</style>
+
 
 ' ressources/icons.iuml
 ' https://useiconic.com/open
