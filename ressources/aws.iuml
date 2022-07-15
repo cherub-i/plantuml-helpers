@@ -1,6 +1,7 @@
 @startuml
 ' helpful ressources:
 ' - https://plantuml.com/de/stdlib#a464d2f6236a5c23
+' - https://github.com/plantuml/plantuml-stdlib/tree/master/awslib: use the "git search in this repository" to identify icons you are looking for
 '
 ' usage:
 ' - include the needed elements in your file after this include, e.g.
@@ -29,6 +30,7 @@ rectangle "<color:e_color><$e_sprite></color>\ne_label" <<e_stereo>> as e_alias
 !include <awslib/DeveloperTools/CodeBuild>
 !include <awslib/ManagementGovernance/CloudWatch>
 !include <awslib/NetworkingContentDelivery/ElasticLoadBalancing>
+!include <awslib/NetworkingAndContentDelivery/VPC>
 !include <awslib/SecurityIdentityCompliance/KeyManagementService>
 !include <awslib/Storage/SimpleStorageServiceBucket>
 @enduml
