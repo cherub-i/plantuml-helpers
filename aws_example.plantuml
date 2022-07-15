@@ -1,0 +1,50 @@
+@startuml
+'!$IncludesUrl = "https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main"
+!$IncludesUrl = "."
+!include $IncludesUrl/target/include.iuml
+!include $IncludesUrl/ressources/aws.iuml
+
+
+Lambda(l_1, "Lambda", " ")
+ElasticContainerService(ecs_1, "ElasticContainerService", " ")
+ElasticContainerRegistry(ecr_1, "ElasticContainerRegistry", " ")
+Aurora(a_1, "Aurora", " ")
+ElastiCacheElastiCacheforRedis(ecc_1, "ElastiCacheElastiCacheforRedis", " ")
+CodeBuild(cb_1, "CodeBuild", " ")
+CloudWatch(cw_1, "CloudWatch", " ")
+ElasticLoadBalancing(elb_1, "ElasticLoadBalancing", " ")
+VPC(vpc_1, "VPC", " ")
+KeyManagementService(kms_1, "KeyManagementService", " ")
+SimpleStorageServiceBucket(s3_1, "SimpleStorageServiceBucket", " ")
+
+Camera(Camera_1, "Camera", " ")
+Client(Client_1, "Client", " ")
+Disk(Disk_1, "Disk", " ")
+Documents(Documents_1, "Documents", " ")
+Email(Email_1, "Email", " ")
+Firewall(Firewall_1, "Firewall", " ")
+Forums(Forums_1, "Forums", " ")
+Gear(Gear_1, "Gear", " ")
+Genericdatabase(GenericDatabase_1, "GenericDatabase", " ")
+' GenericFirewall(GenericFirewall_1, "GenericFirewall", " ")
+Internet(Internet_1, "Internet", " ")
+Internetalt1(InternetAlt1_1, "InternetAlt1", " ")
+Internetalt2(InternetAlt2_1, "InternetAlt2", " ")
+' InternetGateway(InternetGateway_1, "InternetGateway", " ")
+' Marketplace(Marketplace_1, "Marketplace", " ")
+MarketplaceDark(MarketplaceDark_1, "MarketplaceDark", " ")
+MarketplaceLight(MarketplaceLight_1, "MarketplaceLight", " ")
+Mobileclient(MobileClient_1, "MobileClient", " ")
+Multimedia(Multimedia_1, "Multimedia", " ")
+Officebuilding(OfficeBuilding_1, "OfficeBuilding", " ")
+Question(Question_1, "Question", " ")
+SAMLtoken(SAMLToken_1, "SAMLToken", " ")
+SDK(SDK_1, "SDK", " ")
+SSLpadlock(SSLPadlock_1, "SSLPadlock", " ")
+Tapestorage(TapeStorage_1, "TapeStorage", " ")
+Toolkit(Toolkit_1, "Toolkit", " ")
+Traditionalserver(TraditionalServer_1, "TraditionalServer", " ")
+User(User_1, "User", " ")
+Users(Users_1, "Users", " ")
+
+@enduml
