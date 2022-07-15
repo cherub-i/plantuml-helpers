@@ -17,6 +17,19 @@
     {"date": "2022-10-03", "name": "Tag der Deutschen Einheit"},
     {"date": "2022-11-01", "name": "Allerheiligen"},
     {"date": "2022-12-25", "name": "1. Weihnachtsfeiertag"},
-    {"date": "2022-12-26", "name": "2. Weihnachtsfeiertag"}
+    {"date": "2022-12-26", "name": "2. Weihnachtsfeiertag"},
+    {"date": "2023-01-01", "name": "Neujahr"},
+    {"date": "2023-01-06", "name": "Heilige Drei Könige"},
+    {"date": "2023-04-07", "name": "Karfreitag"},
+    {"date": "2023-04-10", "name": "Ostermontag"},
+    {"date": "2023-05-01", "name": "Tag der Arbeit"},
+    {"date": "2023-05-18", "name": "Christi Himmelfahrt"},
+    {"date": "2023-05-29", "name": "Pfingstmontag"},
+    {"date": "2023-06-08", "name": "Fronleichnam"},
+    {"date": "2023-08-15", "name": "Mariä Himmelfahrt"},
+    {"date": "2023-10-03", "name": "Tag der Deutschen Einheit"},
+    {"date": "2023-11-01", "name": "Allerheiligen"},
+    {"date": "2023-12-25", "name": "1. Weihnachtsfeiertag"},
+    {"date": "2023-12-26", "name": "2. Weihnachtsfeiertag"}
 ]}
 @enduml
