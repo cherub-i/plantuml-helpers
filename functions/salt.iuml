@@ -1,0 +1,32 @@
+!function $repeat($char, $times)
+    !$ret_val = ""
+    !$count = 0
+
+    !while $count<$times
+        !$ret_val = $ret_val + $char
+        !$count = $count + 1
+    !endwhile
+    !return $ret_val
+!endfunction
+
+!function $rpad($text, $len)
+    !return $text + $repeat(" ", $len - %strlen($text))
+!endfunction
+
+!$quart = 12
+!$half = $quart * 2 + 1
+!$full = $half * 2 + 1
+
+!function $q($text)
+    !return $rpad($text, $quart)
+!endfunction
+
+!function $h($text)
+    !return $rpad($text, $half)
+!endfunction
+
+!function $f($text)
+    !return $rpad($text, $full)
+!endfunction
+
+!$text_area_width = "." + $repeat(" ", 135) + "."

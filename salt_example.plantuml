@@ -1,0 +1,35 @@
+@startsalt
+'!$IncludesUrl = "https://raw.githubusercontent.com/cherub-i/plantuml-helpers/main"
+!$IncludesUrl = "."
+!include $IncludesUrl/functions/salt.iuml
+
+{
+    {/ <b>Reiter 1 | Reiter 2 | Reiter 3 } | *
+    .
+    Status - Status - Status
+    .
+    --
+    .
+    "$h("Typ")" | *
+    "$h("Bezeichnung")" | "$h("Version")"
+    .
+    {^"Unterobjekt 1" 
+        "$h("Art")" | "$h("Größe")"
+        "$f("Projekt")" | *
+            
+        {^"Aspekt"
+            "$f("Bezeichnung")" | *
+            "$f("Teile")" | *
+            "$h("Art")" | [] Aufzug
+        }  | *
+    } | *
+
+    "$f("Termin")" | *
+
+    {+
+        Bemerkung
+        .
+        $text_area_width
+    } | *
+}
+@endsalt
