@@ -31,4 +31,4 @@
 
 !$zero_width_blank = "<U+200B>"
 !$pipe = "<U+FF5C>"
-!$text_area_width = $0width_blank + $repeat(" ", 135) + $0width_blank
+!$text_area_width = $zero_width_blank + $repeat(" ", 135) + $zero_width_blank
