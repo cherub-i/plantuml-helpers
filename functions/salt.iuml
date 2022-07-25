@@ -30,3 +30,4 @@
 !endfunction
 
 !$text_area_width = "<U+200B>" + $repeat(" ", 135) + "<U+200B>"
+!$pipe = "<U+FF5C>"
