@@ -29,5 +29,6 @@
     !return $rpad($text, $full)
 !endfunction
 
-!$text_area_width = "<U+200B>" + $repeat(" ", 135) + "<U+200B>"
+!$0width_blank = "<U+200B>"
 !$pipe = "<U+FF5C>"
+!$text_area_width = $0width_blank + $repeat(" ", 135) + $0width_blank
