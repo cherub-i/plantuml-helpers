@@ -11,7 +11,8 @@
     --
     .
     "$h("Typ")" | *
-    "$h("Bezeichnung")" | "$h("Version")"
+    "$h("Bezeichnung")" | $qI("Version", "disabled")
+    "$h("Bezeichnung")" | "$q("Version")" 
     .
     {^"Unterobjekt 1" 
         "$h("Art")" | "$h("Größe")"

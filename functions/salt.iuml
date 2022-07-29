@@ -13,18 +13,48 @@
     !return $text + $repeat(" ", $len - %strlen($text))
 !endfunction
 
+!function $printText($text, $width = "", $state = "")
+    !$color = ""
+    !$content = $text
+
+    !if ($state == "disabled")
+        !$color = "<color:#BBB>"
+    !endif
+
+    !if ($width != "")
+        !$content = $rpad($text, $width)
+    !endif
+
+    !return $color + $content
+!endfunction
+
 !$quart = 12
 !$half = $quart * 2 + 1
 !$full = $half * 2 + 1
 
+!procedure $qI($text, $state = "")
+"$printText($text, $quart, $state)"
+!endprocedure
+
+!procedure $hI($text, $state = "")
+"$printText($text, $half, $state)"
+!endprocedure
+
+!procedure $fI($text, $state = "")
+"$printText($text, $full, $state)"
+!endprocedure
+
+' deprecated
 !function $q($text)
     !return $rpad($text, $quart)
 !endfunction
 
+' deprecated
 !function $h($text)
     !return $rpad($text, $half)
 !endfunction
 
+' deprecated
 !function $f($text)
     !return $rpad($text, $full)
 !endfunction
