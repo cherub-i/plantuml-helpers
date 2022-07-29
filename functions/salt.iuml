@@ -32,19 +32,6 @@
 !$half = $quart * 2 + 1
 !$full = $half * 2 + 1
 
-<<<<<<< HEAD
-!procedure $qI($text, $state = "")
-"$printText($text, $quart, $state)"
-!endprocedure
-
-!procedure $hI($text, $state = "")
-"$printText($text, $half, $state)"
-!endprocedure
-
-!procedure $fI($text, $state = "")
-"$printText($text, $full, $state)"
-!endprocedure
-=======
 !function $qI($text, $state = "")
     !return '"' + $printText($text, $quart, $state) + '"'
 !endfunction
@@ -56,7 +43,6 @@
 !function $fI($text, $state = "")
     !return '"' + $printText($text, $full, $state) + '"'
 !endfunction
->>>>>>> 5648f67 (added disabled input fields to salt)
 
 ' deprecated
 !function $q($text)
