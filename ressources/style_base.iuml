@@ -57,12 +57,6 @@ skinparam State {
     BorderColor $LineColor
 }
 
-mindmapDiagram {
-  .new {
-    BackgroundColor lightblue
-  }
-}
-
 <style>
     .transparent {
         BackGroundColor transparent
