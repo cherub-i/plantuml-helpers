@@ -1,3 +1,8 @@
+!$quart = 12
+!$half = $quart * 2 + 1
+!$full = $half * 2 + 1
+!$disabled = "<color:#BBB>"
+
 !function $repeat($char, $times)
     !$ret_val = ""
     !$count = 0
@@ -18,7 +23,7 @@
     !$content = $text
 
     !if ($state == "disabled")
-        !$color = "<color:#BBB>"
+        !$color = $disabled
     !endif
 
     !if ($width != "")
@@ -27,10 +32,6 @@
 
     !return $color + $content
 !endfunction
-
-!$quart = 12
-!$half = $quart * 2 + 1
-!$full = $half * 2 + 1
 
 !function $qI($text, $state = "")
     !return '"' + $printText($text, $quart, $state) + '"'
