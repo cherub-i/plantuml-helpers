@@ -120,6 +120,11 @@ skinparam State {
         .new {
             FontColor darkgreen
         }
+        .lowprio {
+            BackgroundColor lightgrey
+            LineColor grey
+            FontColor grey
+        }
     }
 </style>
 
