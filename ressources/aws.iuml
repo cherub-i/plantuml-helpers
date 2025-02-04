@@ -11,7 +11,7 @@
 '   Aurora(db, "AWS Aurora Database", " ")
 '   SimpleStorageServiceBucket(aws_s3, "AWS S3", " ")
 
-!include <awslib/AWSSimplified>
+!include <awslib14/AWSSimplified>
 
 ' redefine AWSEntity, so that labels are not in bold and closer to icon
 !definelong AWSEntity(e_alias, e_label, e_techn, e_color, e_sprite, e_stereo)
@@ -20,17 +20,14 @@ rectangle "<color:e_color><$e_sprite></color>\ne_label" <<e_stereo>> as e_alias
 
 
 ' include commonly used AWS icons
-!include <awslib/General/all>
+!include <awslib14/General/all>
 
-!include <awslib/Compute/Lambda>
-!include <awslib/Compute/ElasticContainerService>
-!include <awslib/Containers/ElasticContainerRegistry>
-!include <awslib/Database/Aurora>
-!include <awslib/Database/ElastiCacheElastiCacheforRedis>
-!include <awslib/DeveloperTools/CodeBuild>
-!include <awslib/ManagementGovernance/CloudWatch>
-!include <awslib/NetworkingContentDelivery/ElasticLoadBalancing>
-!include <awslib/NetworkingAndContentDelivery/VPC>
-!include <awslib/SecurityIdentityCompliance/KeyManagementService>
-!include <awslib/Storage/SimpleStorageServiceBucket>
+!include <awslib14/Compute/all>
+!include <awslib14/Containers/all>
+!include <awslib14/Database/all>
+!include <awslib14/DeveloperTools/all>
+!include <awslib14/ManagementGovernance/all>
+!include <awslib14/NetworkingContentDelivery/all>
+!include <awslib14/SecurityIdentityCompliance/all>
+!include <awslib14/Storage/all>
 @enduml
